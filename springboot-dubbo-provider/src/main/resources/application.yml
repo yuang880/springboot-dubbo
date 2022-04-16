@@ -7,7 +7,7 @@ spring:
       name: SERVICE-PROVIDER
     base-package: com.yuang.provider.service
     registry:
-      address: 47.98.250.4x
+      address: 47.98.250.4x   # zk安装的地址
       port: 2181
       protocol: zookeeper
       register: true
@@ -15,6 +15,7 @@ spring:
       name: dubbo
       port: 20880
       accesslog: true
+      host: 127.0.0.1 # 本机地址
     provider:
       retries: 1
       delay: -1

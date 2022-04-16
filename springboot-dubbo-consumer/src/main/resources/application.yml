@@ -7,7 +7,7 @@ spring:
       name: SERVICE-CONSUMER
     base-package: com.yuang.consumer
     registry:
-      address: 47.98.250.4x
+      address: 47.98.250.4x   # zk安装的地址
       port: 2181
       protocol: zookeeper
       register: true
