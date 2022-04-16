@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * @author zhang
  */
-@Component   # 可以不加
+@Component   // 可以不加
 @Service(version = "1.0.0")
 public class ProviderServiceImpl implements ProviderService {
     @Override
