@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  dubbo:
+    application:
+      name: SERVICE-PROVIDER
+    base-package: com.yuang.provider.service
+    registry:
+      address: 47.98.250.4x
+      port: 2181
+      protocol: zookeeper
+      register: true
+    protocol:
+      name: dubbo
+      port: 20880
+      accesslog: true
+    provider:
+      retries: 1
+      delay: -1

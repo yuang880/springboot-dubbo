@@ -1,0 +1,22 @@
+server:
+  port: 8083
+
+spring:
+  dubbo:
+    application:
+      name: SERVICE-CONSUMER
+    base-package: com.yuang.consumer
+    registry:
+      address: 47.98.250.4x
+      port: 2181
+      protocol: zookeeper
+      register: true
+    protocol:
+      name: dubbo
+      port: 20880
+      accesslog: true
+
+    consumer:
+      timeout: 1000
+      check: true
+      retries: 2 # 服务调用重试次数
